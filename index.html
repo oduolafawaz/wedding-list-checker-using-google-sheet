@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wedding Invitation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="overlay">
+
+<div class="card" id="inputCard">
+<h2>Special Celebration</h2>
+<p>Enter your name to view your invitation</p>
+
+<input type="text" id="guestName" placeholder="Your full name">
+
+<button onclick="checkGuest()">View Invitation →</button>
+
+<p id="error"></p>
+</div>
+
+
+<div class="card hidden" id="resultCard">
+
+<h2 id="welcomeText"></h2>
+
+<div class="info">
+<p><strong>Table Number:</strong> <span id="tableN"></span></p>
+<p><strong>Access Level:</strong> <span id="access"></span></p>
+</div>
+<div class="tableSection">
+
+<button id="viewGuestsBtn" onclick="showTableGuests()">View Table Guests ▼</button>
+
+<ul id="tableGuests" class="hidden"></ul>
+
+</div>
+
+<button id="backbtn" onclick="goBack()">← Go Back</button>
+
+</div>
+
+</div>
+
+<script src="script3.js"></script>
+</body>
+</html>
