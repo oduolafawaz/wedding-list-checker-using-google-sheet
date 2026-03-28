@@ -103,3 +103,8 @@ document.getElementById("guestName").value="";
 document.getElementById("tableGuests").classList.add("hidden");
 
 }
+fetch(`/api/search?q=${value}`)
+  .then(res => res.json())
+  .then(data => {
+    // display suggestions
+  });
